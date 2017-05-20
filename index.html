@@ -8,47 +8,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- // link to css // -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
     <title>Crystals Collectors Game!!!</title>
 
   </head>
 
   <body>
-<div id = "wrapper">
 
-      <h1><span>Crystals Collectors!<span><h1>
-        <div id = "instructions">
-          <p>You will be given a random number at the start of the game.</p>
-          <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
-          <p>You will win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
-          <p>The value on each crystal is hidden from you until you click on it.</p>
-          <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>
+  <div id = "header">
+      <h1>Crystals Collectors!</h1>
+  </div>
 
-      <div class = "container">
-          <div id = "guessedNumber">
-              <h2> Number to Guess: </h2>
-          </div>
+  <div id = "instructions">
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You will win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+    <p>The value on each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </div>
 
-          <div id "score">
-              <h3><span id="status"></span></h3>
-              <h3>Wins: <span id "wins"></span></h3>
-              <h3>Loses: <span id "loses"></span></h3>
-          </div>
+  <div id = "container">
+      <div id = "guessedNumber">
+          <h2> Number to Guess: </h2>
       </div>
 
-      <div id "crystals"></div>
-
-      <div id "totalScore">
-          <hd id = "total"> Your total score is: <span id = "yourScore">0</span></h2>
+      <div id "score">
+          <h3><span id="status"></span></h3>
+          <h3>Wins: <span id "wins"></span></h3>
+          <h3>Losses: <span id "losses"></span></h3>
       </div>
+  </div>
+
+  <div id = "crystals">
+    <img src="assets/images/crystal.jpeg" class = gemImage id = "one" alt="crystal">
+    <img src="assets/images/amethyst.jpg" class = gemImage id = "two" alt="purple gem">
+    <img src="assets/images/rose.jpg" class = gemImage id = "three" alt="pink gem">
+    <img src="assets/images/emerald.JPG" class = gemImage id = "four" alt="green gem">
+  </div>
+
+  <div id = "totalScore">
+      <hd id = "total"> Your total score is: <span id = "yourScore">0</span></h2>
+  </div>
 
 </div>
 
-    <!-- // link to jquery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- // link to jquery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- link to javascript -->
-    <script src= "assets/Javascript/game.js" type="text/javascript"></script>
-  </body>
+<!-- link to javascript -->
+<script src= "assets/Javascript/game.js" type="text/javascript"></script>
+
+</body>
 </html>
