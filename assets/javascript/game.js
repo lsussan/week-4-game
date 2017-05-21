@@ -1,15 +1,15 @@
 $(document).ready(function(){
 // select random number at game start
-// number should be 25-75
-  var Random=Math.floor(Math.random()*75+25)
+// number should be 19-120
+  var Random=Math.floor(Math.random()*101+19)
 // put random number into randomNumber id html
   $("#randomNumber").text(Random);
 
-// now set up random numbers to crystal images rando number btwn 1-15
-  var num1= Math.floor(Math.random()*14+1)
-  var num2= Math.floor(Math.random()*14+1)
-  var num3= Math.floor(Math.random()*14+1)
-  var num4= Math.floor(Math.random()*14+1)
+// now set up random numbers to crystal images rando number btwn 1-12
+  var num1= Math.floor(Math.random()*11+1)
+  var num2= Math.floor(Math.random()*11+1)
+  var num3= Math.floor(Math.random()*11+1)
+  var num4= Math.floor(Math.random()*11+1)
 
 // declare variables
   var totalScore= 0;
@@ -22,13 +22,13 @@ $("#numberLosses").text(losses);
 
 // reset
   function reset(){
-    Random=Math.floor(Math.random()*75+25);
+    Random=Math.floor(Math.random()*101+19);
     console.log(Random)
     $("#randomNumber").text(Random);
-    num1= Math.floor(Math.random()*14+1);
-    num2= Math.floor(Math.random()*14+1);
-    num3= Math.floor(Math.random()*14+1);
-    num4= Math.floor(Math.random()*14+1);
+    num1= Math.floor(Math.random()*11+1);
+    num2= Math.floor(Math.random()*11+1);
+    num3= Math.floor(Math.random()*11+1);
+    num4= Math.floor(Math.random()*11+1);
     totalScore=0;
     $("#yourScore").text(totalScore);
   }
@@ -107,4 +107,3 @@ $("#numberLosses").text(losses);
         }
   });
 });
-// win/lose conditions

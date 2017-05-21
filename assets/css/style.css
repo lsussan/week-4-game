@@ -4,7 +4,8 @@ body {
 
 .page-header {
   text-align: center;
-  font-size: 50px;
+  font-size: 35px;
+  font-weight: bold;
   background: gray;
   height: 75px;
   padding: 15px;
@@ -18,7 +19,6 @@ body {
 
 .panel-body {
   text-align: center;
-  font-size: 20px;
-  margin: auto;
+  font-size: 15px;
   padding: 10px;
 }
